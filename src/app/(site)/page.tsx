@@ -74,6 +74,7 @@ export default async function HomePage() {
             {clinic ? (
               <>
                 <p className="font-semibold">{clinic.name} · {formatWhen(clinic)}</p>
+                 <p className="text-sm">Please note: These are the clinic's opening hours. Available booking times may differ.</p>
                 <p>{clinic.summary}</p>
                 <ButtonLink href={`/clinics/${clinic.slug}`} className="w-fit">Book a time slot</ButtonLink>
               </>
